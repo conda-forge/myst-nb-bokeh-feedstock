@@ -25,6 +25,7 @@ requirements:
     - myst-nb >=0.13.2
     - python >=3.7
     - sphinx >=3.5,<5
+    - docutils # Add this to satisfy the linter, but let upstream dependencies pin the version
 
 test:
   imports:
