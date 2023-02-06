@@ -1,5 +1,5 @@
 {% set name = "myst-nb-bokeh" %}
-{% set version = "0.5.3" %}
+{% set version = "1.0.0.post3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/myst-nb-bokeh-{{ version }}.tar.gz
-  sha256: a044e447c21338b40599e2574c9ea16626893beb6a1eb3adf814b6e3a473684e
+  sha256: 8a8af05ecc3b1e0a491cdced90e0565589ca54cd52d6ccaebe1ad130314d28aa
 
 build:
   number: 0
@@ -18,13 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
+    - pdm-pep517 >=1.0.0
   run:
-    - bokeh ~=2.4.0
+    - bokeh >=3.0.0
     - ipython >=7.0
-    - myst-nb >=0.13.2
-    - python >=3.7
-    - sphinx >=3.5,<5
+    - myst-nb >=0.17.1,<0.18
+    - python >=3.9
+    - sphinx >=4.5,<6
     - docutils # Add this to satisfy the linter, but let upstream dependencies pin the version
 
 test:
