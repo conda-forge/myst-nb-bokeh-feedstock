@@ -1,11 +1,11 @@
-About myst-nb-bokeh
-===================
+About myst-nb-bokeh-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/myst-nb-bokeh-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bryanwweber/myst-nb-bokeh
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/myst-nb-bokeh-feedstock/blob/main/LICENSE.txt)
 
 Summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST documents.
 
