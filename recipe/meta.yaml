@@ -1,5 +1,5 @@
 {% set name = "myst-nb-bokeh" %}
-{% set version = "1.0.0.post3" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/myst-nb-bokeh-{{ version }}.tar.gz
-  sha256: 8a8af05ecc3b1e0a491cdced90e0565589ca54cd52d6ccaebe1ad130314d28aa
+  sha256: 411646f65370c2a767d47a7a67ab68a55b043893a91c400d3dddc40792a36a33
 
 build:
   number: 0
