@@ -1,5 +1,5 @@
 {% set name = "myst-nb-bokeh" %}
-{% set version = "1.1.0" %}
+{% set version = "2024.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/myst-nb-bokeh-{{ version }}.tar.gz
-  sha256: 411646f65370c2a767d47a7a67ab68a55b043893a91c400d3dddc40792a36a33
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: fccd91d8b5a273a06a9f97dd8a4e216ba51c36e18e10f674d6158655ddc203c9
 
 build:
   number: 0
@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
-    - pdm-pep517 >=1.0.0
+    - python >=3.10
+    - pdm-backend >=2.1.8
   run:
-    - bokeh >=3.0.0
-    - ipython >=7.0
-    - myst-nb >=0.17.1,<0.18
-    - python >=3.8
-    - sphinx >=4.5,<6
+    - bokeh >=3.3.4
+    - ipython >=8.20.0
+    - myst-nb >=1.0.0
+    - python >=3.10
+    - sphinx >=7.2.6
     - docutils # Add this to satisfy the linter, but let upstream dependencies pin the version
 
 test:
@@ -38,8 +38,9 @@ test:
 
 about:
   home: https://github.com/bryanwweber/myst-nb-bokeh
-  summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST documents.
+  summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST-NB documents.
   dev_url: https://github.com/bryanwweber/myst-nb-bokeh
+  doc_url: https://myst-nb-bokeh.readthedocs.io
   license: BSD-3-Clause
   license_file: LICENSE
 
