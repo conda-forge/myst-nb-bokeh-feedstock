@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
-    - pdm-pep517 >=1.0.0
+    - python >=3.10
+    - pdm-backend >=2.1.8
   run:
-    - bokeh >=3.0.0
-    - ipython >=7.0
-    - myst-nb >=0.17.1,<0.18
-    - python >=3.8
-    - sphinx >=4.5,<6
+    - bokeh >=3.3.4
+    - ipython >=8.20.0
+    - myst-nb >=1.0.0
+    - python >=3.10
+    - sphinx >=7.2.6
     - docutils # Add this to satisfy the linter, but let upstream dependencies pin the version
 
 test:
@@ -38,8 +38,9 @@ test:
 
 about:
   home: https://github.com/bryanwweber/myst-nb-bokeh
-  summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST documents.
+  summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST-NB documents.
   dev_url: https://github.com/bryanwweber/myst-nb-bokeh
+  doc_url: https://myst-nb-bokeh.readthedocs.io
   license: BSD-3-Clause
   license_file: LICENSE
 
