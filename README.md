@@ -7,9 +7,11 @@ Home: https://github.com/bryanwweber/myst-nb-bokeh
 
 Package license: BSD-3-Clause
 
-Summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST documents.
+Summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST-NB documents.
 
 Development: https://github.com/bryanwweber/myst-nb-bokeh
+
+Documentation: https://myst-nb-bokeh.readthedocs.io
 
 Current build status
 ====================
